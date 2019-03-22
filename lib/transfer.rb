@@ -19,6 +19,7 @@ class Transfer
   def execute_transaction
     if status == "complete" || valid? == false
       "Transaction rejected. Please check your account balance."
+      self.status = 'rejected'
     else
       sender.balance -= amount
       receiver.balance += amount
