@@ -19,6 +19,9 @@ class Transfer
       sender.balance -= amount
       receiver.balance += amount
       @status = 'complete'
+    else
+      "This trasnfer is already complete"
+    end
   end
   
 end
