@@ -35,6 +35,7 @@ class Transfer
       self.status = 'reversed'
      else
        "This transaction has already been reversed."
+      end
   end
   
 end
