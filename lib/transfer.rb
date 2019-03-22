@@ -1,3 +1,5 @@
+require 'pry'
+
 class Transfer
   # your code here
   attr_accessor :amount, :status
