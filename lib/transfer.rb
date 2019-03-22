@@ -29,13 +29,13 @@ class Transfer
   end
   
   def reverse_transfer
-   if status != 'reversed'  
-    receiver.balance -= amount
-    sender.balance += amount
-    self.status = 'reversed'
-   else
-     
-   end
+     if status != 'reversed'  
+      receiver.balance -= amount
+      sender.balance += amount
+      self.status = 'reversed'
+     else
+       
+     end
   end
   
 end
